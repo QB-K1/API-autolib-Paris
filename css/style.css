@@ -1,0 +1,95 @@
+/*-----------------------------------------------------------------------------------*/
+/*--------------------------------- FONT FACE ---------------------------------------*/
+/*--------------------------- J'appelle mes polices ---------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: "Bree Serif";
+    src: url(../fonts/BreeSerif-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*------------------------------------- GLOBAL ----------------------------------------*/
+/* -------- Balises et class appelés à plusieurs endroits dans la page---------------- */
+/*-------------------------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box; /*Je précise ma box-sizing (pour une width qui prenne le padding)*/
+    outline: none; /*Pour que les éléments sur lequel le user clique ne soient pas encadrés en bleu*/
+    /*border: 2px dotted rgba(0,0,0,0.3);*/ /* Visualisation des éléments en leur mettant une border à tout */
+}
+
+body {
+	margin: 0; /*Je colle mon body aux dimensions de la page web*/
+    font-family: "Bree Serif", Arial, sans-serif;
+    background-image: url(../img/fond.png);
+
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none; /*Ne souligne pas les liens*/
+}
+
+#logo {
+    width: 250px;
+}
+
+
+/* Cacher un élément */
+.hidden {display: none}
+
+/* pour descendre et cacher élément suivant, notamment un espacement */
+.clear::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/* Mettre en gras un élément */
+.bold {font-weight: bold}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 4% 0;
+}
+
+header img {
+    width : 100px;
+}
+
+
+h1, h2, h3 {
+    font-weight: normal;
+    color: #5099FC;
+}
+
+fieldset, article, aside {
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 350px;
+}
+
+#results {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#autolibDetails, #resultsList {
+    padding : 2%;
+    width : 45%;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*------------------------------------- FOOTER ----------------------------------------*/
+/* --------------------------- Ce qui concerne le footer ----------------------------- */
+/*-------------------------------------------------------------------------------------*/
